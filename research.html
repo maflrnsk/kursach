@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+  <title>Астероиды и кометы</title>
+  <link rel="icon" type="image/png" href="images\icon.png">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="research.css" />
+</head>
+
+<body>
+<header class="mainheader">
+  <img src="images\logo.png" class="logo">
+
+  <nav class="menubar">
+    <a href="index.html" class="nodrop">Главная страница</a>
+    <div class="dropdown">
+      <a class="dropbtn">Возможности &#x25BE;</a>
+      <div class="dropdown-content">
+        <a href="news.html">Новости</a>
+        <a href="explore.html">Изучить</a>
+        <a href="research.html">Исследовать</a>
+      </div>
+    </div>
+    <a href="contacts.html" class="nodrop">Контакты</a>
+  </nav>
+  <div id="menu-opener">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+</header>
+
+  <main>
+    <div id="name">Забронировать</div>
+    <div id="reservation-container">
+      <div id="block-1" class="block">
+        <div class="block-description">
+          <div class="block-description-name">Карта</div>
+          <div class="block-text">Отождествление астрономических объектов на небе с объектами в каталогах.</div>
+          <div class="block-price">100 руб/час</div>
+          <div class="block-buy">
+            <div onclick="ChangeCount(1, -1)">-</div>
+            <div id="cart-1">В корзину (0 часов)</div>
+            <div onclick="ChangeCount(1, 1)">+</div>
+          </div>
+        </div>
+        <img class="block-image" src="images/research1.jpg">
+      </div>
+      <div id="block-2" class="block">
+        <div class="block-description">
+          <div class="block-description-name">Фонарик</div>
+          <div class="block-text">Небольшой источник света для индивидуального использования.</div>
+          <div class="block-price">200 руб/час</div>
+          <div class="block-buy">
+            <div onclick="ChangeCount(2, -1)">-</div>
+            <div id="cart-2">В корзину (0 часов)</div>
+            <div onclick="ChangeCount(2, 1)">+</div>
+          </div>
+        </div>
+        <img class="block-image" src="images/research2.jpg">
+      </div>
+      <div id="block-3" class="block">
+        <div class="block-description">
+          <div class="block-description-name">Бинокль</div>
+          <div class="block-text">Позволяет наблюдать удаленные объекты.</div>
+          <div class="block-price">400 руб/час</div>
+          <div class="block-buy">
+            <div onclick="ChangeCount(3, -1)">-</div>
+            <div id="cart-3">В корзину (0 часов)</div>
+            <div onclick="ChangeCount(3, 1)">+</div>
+          </div>
+        </div>
+        <img class="block-image" src="images/research3.jpg">
+      </div>
+      <div id="block-4" class="block">
+        <div class="block-description">
+          <div class="block-description-name">Телескоп</div>
+          <div class="block-text">Позволяет наблюдать очень удаленные объекты.</div>
+          <div class="block-price">1200 руб/час</div>
+          <div class="block-buy">
+            <div onclick="ChangeCount(4, -1)">-</div>
+            <div id="cart-4">В корзину (0 часов)</div>
+            <div onclick="ChangeCount(4, 1)">+</div>
+          </div>
+        </div>
+        <img class="block-image" src="images/research4.jpeg">
+      </div>
+    </div>
+    <div id="to-cart" onclick="OpenCart()">
+      Перейти в корзину
+    </div>
+  </main>
+
+<script src="research.js"></script>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<footer>
+  <div class="mainfooter">
+    <div class="socicons">
+      <a href="https://vk.com/maflrnsk"><ion-icon name="logo-vk" class="conticon vk"></ion-icon></a>
+      <a href="https://t.me/marieeeekt"><ion-icon name="paper-plane-outline" class="conticon tg"></ion-icon></a>
+      <a href="mailto:florinmarsk@gmail.com"><ion-icon name="mail-outline" class="conticon mail"></ion-icon></a>
+    </div>
+  </div>
+
+  <div class="footbar">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="explore.html">Изучить</a></li>
+      <li><a href="research.html">Исследовать</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="footcopy">
+    <p>&copy;Флоринская Мария, 2023</p>
+  </div>
+</footer>
+
+</html>

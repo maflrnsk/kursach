@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   body {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: url("images/background.jpg") no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     flex-direction: column;
+     overflow-x: hidden;
+     font-family: "Philosopher", serif;
+   }
+
+   h1{
+    color: #fff;
+    margin: 3em 0 -20px;
+    text-align: center;
+  }
+  
+#name {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+}
+main {
+    display: inline;
+}
+#reservation-container {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+    margin: 40px 120px;
+    gap: 50px;
+    text-align: center;
+}
+.block {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80vw;
+    background: linear-gradient(180deg, rgba(133,41,142,0.5) 0%, rgba(111,32,117,0.5) 34%, rgba(66,19,69,0.5) 100%);
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    color: white;
+    padding: 20px 0;
+    gap: 40px;
+    justify-content: center;
+    justify-items: center;
+}
+.block-image {
+    position: relative;
+    max-height: 260px;
+    max-width: 40vw;
+}
+.block-description {
+    display: grid;
+    max-height: 260px;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    justify-content: center;
+    justify-items: center;
+    width: 30vw;
+}
+.block-text {
+    font-size: 1.5em;
+    width: 30vw;
+    color: #e1e1e1;
+}
+.block-description-name {
+    font-size: 2em;
+    margin-bottom: 20px;
+    width: 30vw;
+}
+.block-price {
+    font-style: italic;
+}
+.block-buy {
+    user-select: none;
+    display: grid;
+    grid-template-columns: 30px 140px 30px;
+    width: 180px;
+    line-height: 30px;
+}
+.block-buy > div {
+    border-radius: 40px;
+}
+.block-buy > div:nth-child(1):hover {
+    cursor: pointer;
+    background-color: rgba(66,19,69,0.5);
+}
+.block-buy > div:nth-child(3):hover {
+    cursor: pointer;
+    background-color: rgba(66,19,69,0.5);
+}
+#to-cart {
+    color: white;
+    font-size: 1.4em;
+    background-color: rgba(66,19,69,0.5);
+    width: 240px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    left: 60vw;
+    cursor: pointer;
+}
+#to-cart:hover {
+    background-color: rgba(17,5,18,0.6);
+}
+
+@media screen and (max-width: 800px) {
+    .block {
+        width: 80vw;
+        margin-left: -70px;
+        margin-right: 70px;
+    }
+    .block-image{
+        width: 20vw;
+        height: 20vh;
+    }
+    #to-cart {
+        left: 50vw;
+    }
+    .block-text {
+        align-items: center;
+    }
+    img{
+        margin-right: -100px;
+        width: 130%;
+        height: 70%;
+    }
+}
+
+.js-back {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 666;
+}
+.js-cart {
+    position: fixed;
+    height: 80vh;
+    width: 80vw;
+    background-color: #000D;
+    z-index: 999;
+    top: 10vh;
+    left: 10vw;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(6, 10vh);
+    padding: 5vw;
+    align-items: center;
+}
+.js-element {
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    border: 1px white solid;
+}
+.js-element:first-child {
+    font-weight: bold;
+    border: none;
+    font-size: 1.4em;
+}
+.js-element:last-child {
+    font-weight: bold;
+    border: none;
+    font-size: 1.4em;
+    translate: 20vw 0;
+}

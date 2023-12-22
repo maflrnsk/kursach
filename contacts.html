@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="contacts.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+  <title>Астероиды и кометы</title>
+  <link rel="icon" type="image/png" href="images\icon.png">
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+<header class="mainheader">
+  <img src="images\logo.png" class="logo">
+
+  <nav class="menubar">
+    <a href="index.html" class="nodrop">Главная страница</a>
+    <div class="dropdown">
+      <a class="dropbtn">Возможности &#x25BE;</a>
+      <div class="dropdown-content">
+        <a href="news.html">Новости</a>
+        <a href="explore.html">Изучить</a>
+        <a href="research.html">Исследовать</a>
+      </div>
+    </div>
+    <a href="contacts.html" class="nodrop">Контакты</a>
+  </nav>
+  <div id="menu-opener">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+</header>
+
+<main>
+
+  
+  <div class="iicons">
+      <a href="https://vk.com/maflrnsk"><ion-icon name="logo-vk" class="conticon vk"></ion-icon></a>
+      <a href="https://t.me/marieeeekt"><ion-icon name="paper-plane-outline" class="conticon tg"></ion-icon></a>
+      <a href="mailto:florinmarsk@gmail.com"><ion-icon name="mail-outline" class="conticon mail"></ion-icon></a>
+  </div>
+
+  <h1>Напишите нам</h1>
+  <div class="feedback">
+    <span></span>
+    <span></span>
+    <span></span>
+    <form action="formfeed">
+  
+      <label for="fname">Имя</label>
+      <input type="text" id="fname" name="firstname" placeholder="Ваше имя..." required>
+  
+      <label for="lname">Фамилия</label>
+      <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..." required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Ваш e-mail..." required>
+  
+      <label for="theme">Тема письма</label>
+      <select id="theme" name="theme" >
+        <option value="" selected disabled>Выберите тему письма</option>
+        <option value="cooperation">Сотрудничество</option>
+        <option value="offer">Предложение</option>
+        <option value="review">Отзыв</option>
+        <option value="complaint">Жалоба</option>
+        <option value="other">Другое</option>
+      </select>
+  
+      <label for="subject">Сообщение</label>
+      <textarea id="subject" name="subject" placeholder="Напишите что-то..." style="height:150px" required></textarea>
+  
+      <a href="mailto:florinmarsk@gmail.com"><input type="submit" value="Отправить"></a>
+      
+  
+    </form>
+  </div>
+
+
+</main>
+
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<footer>
+  <div class="mainfooter">
+    <div class="socicons">
+      <a href="https://vk.com/maflrnsk"><ion-icon name="logo-vk" class="conticon vk"></ion-icon></a>
+      <a href="https://t.me/marieeeekt"><ion-icon name="paper-plane-outline" class="conticon tg"></ion-icon></a>
+      <a href="mailto:florinmarsk@gmail.com"><ion-icon name="mail-outline" class="conticon mail"></ion-icon></a>
+    </div>
+  </div>
+
+  <div class="footbar">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="explore.html">Изучить</a></li>
+      <li><a href="research.html">Исследовать</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="footcopy">
+    <p>&copy;Флоринская Мария, 2023</p>
+  </div>
+</footer>
+</html>

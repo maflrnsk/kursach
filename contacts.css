@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("images/background.jpg") no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Philosopher", serif;
+}
+
+h1{
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+ /*------------------------Иконки-----------------------*/
+
+  .iicons{
+    display: flex;
+    margin-top: 4em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iicons a{
+    text-decoration: none;
+    padding: 10px 4em;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .iicons a .conticon{
+    font-size: 6em;
+    color: #fff;
+  }
+
+  .iicons a:hover .conticon{
+    transform: rotate(15deg);
+    transition: 0.5s;
+  }
+
+ /*------------------------Иконки-----------------------*/
+
+  /*-----------------------Форма-----------------------*/
+
+  input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 18px;
+  }
+  
+  input[type=submit] {
+    background-color: #fff;
+    color:  rgb(78, 27, 108);
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   font-size: 15px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(78, 27, 108);
+    color:  #fff;
+  }
+  
+  .feedback {
+    border-radius: 5px;
+    background: rgb(133,41,142);
+    background: linear-gradient(180deg, rgba(133,41,142,0.5) 0%, rgba(111,32,117,0.5) 34%, rgba(66,19,69,0.5) 100%);
+    color: #fff;
+    padding: 30px;
+    font-size: 17px;
+    margin: 2em;
+    max-width: 1000px;
+    width: 90vw;
+  }
+
+
+  span:nth-of-type(1) {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    width: 100px;
+    height: 100px;
+    background-color: rgba(174, 188, 213, 0.397);
+    display: block;
+    border-radius: 5px;
+    animation: move-square1 2.5s ease-in-out infinite;
+    z-index: 10;
+  }
+  
+  span:nth-of-type(2) {
+    content: "";
+    position: absolute;
+    backdrop-filter: blur(10px);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(174, 188, 213, 0.397);
+    display: block;
+    border-radius: 5px;
+    animation: move-square2 3s ease-in-out infinite;
+  }
+  
+  span:nth-of-type(3) {
+    content: "";
+    position: absolute;
+    backdrop-filter: blur(10px);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(174, 188, 213, 0.397);
+    display: block;
+    border-radius: 5px;
+    animation: move-square3 5s ease-in-out infinite;
+  }
+
+  span:nth-of-type(1):hover {
+    transform: scale(1.1);
+  }
+  span:nth-of-type(2):hover {
+    transform: scale(1.1);
+  }
+  span:nth-of-type(3):hover {
+    transform: scale(1.1);
+  }
+
+
+  @keyframes move-square1 {
+    0% {
+      top: calc(100% + 110px);
+      right: 10%;
+    }
+  
+    50% {
+      top: calc(100% + 90px);
+     right: 15%;
+    }
+    100% {
+      top: calc(100% + 110px);
+      right: 10%;
+    }
+  }
+  @keyframes move-square2 {
+    0% {
+      top: 32%;
+      right: 9%;
+    }
+  
+    50% {
+      top: 42%;
+      right: 13%;
+    }
+    100% {
+      top: 32%;
+      right: 9%;
+    }
+  }
+  
+  @keyframes move-square3 {
+    0% {
+      top: 92%;
+      left: 8%;
+    }
+  
+    30% {
+      top: 98%;
+      left: 14%;
+    }
+    100% {
+      top: 92%;
+      left: 8%;
+    }
+  }
+
+ /*-----------------------Форма-----------------------*/
+ 
+@media screen and (max-width: 800px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .feedback {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .iicons a{
+    padding: 10px 2em;
+    margin: 10px;
+  }
+  .iicons a .conticon{
+    font-size: 3em;
+  }
+    span:nth-of-type(1) {
+    width: 40px;
+    height: 40px;
+  }
+  
+  span:nth-of-type(2) {
+    width: 50px;
+    height: 50px;
+  }
+  
+  span:nth-of-type(3) {
+    width: 35px;
+    height: 35px;
+  }
+}
