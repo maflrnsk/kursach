@@ -113,23 +113,20 @@ main {
 
 @media screen and (max-width: 800px) {
     .block {
-        width: 80vw;
+        width: 90vw;
     }
     .block-image{
-        right: 30px;
-        width: 25vw;
-        height: 90%;
+       right: -15px;
+        top: 40px;
+        height: 10em;
+        width: 10em;
     }
     #to-cart {
         left: 50vw;
     }
     .block-text {
         align-items: center;
-    }
-    img{
-        margin-right: -100px;
-        width: 130%;
-        height: 70%;
+        font-size: 18px;
     }
     .footbar > ul {
         display: flex;
