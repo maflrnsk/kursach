@@ -81,11 +81,15 @@
 
    /*------------------------Новости-----------------------*/
  
+ 
 @media screen and (max-width: 800px){
     .box {
         width: 90vw;
         transform: none;
         transition: none;
+    }
+    .box p{
+        padding: 2px;
     }
     .cont > img {
         width: 80vw;
