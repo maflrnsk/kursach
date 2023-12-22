@@ -117,7 +117,8 @@ main {
     }
     .block-image{
         right: 30px;
-        width: 30vw;
+        width: 25vw;
+        height: 90%;
     }
     #to-cart {
         left: 50vw;
